@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react';
 import { GoogleMap as GoogleMaps, LoadScript, Marker } from '@react-google-maps/api';
 import home_pin from '../assets/home_pin.svg'
 
@@ -21,7 +21,6 @@ function GoogleMap() {
         googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || ''
     };
 
-    console.log(apiKey)
     return (
         <div className='w-[100%]'>
             <LoadScript googleMapsApiKey={apiKey.googleMapsApiKey}>
